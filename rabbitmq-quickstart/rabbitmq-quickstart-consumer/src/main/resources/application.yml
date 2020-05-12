@@ -1,0 +1,51 @@
+server:
+  port: 18083
+  
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: RABBITMQ-QUICKSTART-CONSUMER
+  rabbitmq:
+    host: 172.20.8.73
+    virtual-host: /basedata
+    port: 32002
+    username: basedata
+    password: basedata
+    listener:
+      simple:
+        acknowledge-mode: manual
+        auto-startup: true
+        default-requeue-rejected: false
+        concurrency: 1
+        max-concurrency: 8
+        prefetch: 1
+        retry:
+          enabled: false
+          max-attempts: 3
+          initial-interval: 10000
+
+eureka:
+  client:
+    enabled: false    
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+
+eos:
+  application:
+    sys-code: CCMS
+    sys-key: 0176c8bde0b14ca0ae769454187c9b38
+    app-inst-grp-code: default
+  springfox:
+    enabled: true
+  logging:
+    outbound:
+      enabled: true
+      hh-enabled: true
+    inbound:
+      enabled: true
+      hh-enabled: true

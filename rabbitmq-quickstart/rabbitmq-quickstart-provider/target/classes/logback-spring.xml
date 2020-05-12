@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <property name="LOG_FILE" value="./target/eos-app.log"/>
+    <property name="EOS_TRACE_LOG_FILE" value="./target/eos-trace.log"/>
+    <include resource="com/primeton/eos/dap/sdk/logging/logback/logback-spring.xml" />
+</configuration>

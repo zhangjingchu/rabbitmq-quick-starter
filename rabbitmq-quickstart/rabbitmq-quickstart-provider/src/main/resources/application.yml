@@ -1,0 +1,25 @@
+server:
+  port: 18082
+  
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: RABBITMQ-QUICKSTART-PROVIDER
+  rabbitmq:
+    host: 172.20.8.73
+    virtual-host: /basedata
+    port: 32002
+    username: basedata
+    password: basedata
+    publisher-confirms: true
+
+eureka:
+  client:
+    enabled: false    
+    
+eos:
+  application:
+    sys-code: CCMS
+    sys-key: 0176c8bde0b14ca0ae769454187c9b38
+ 

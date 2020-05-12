@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.primeton.eos</groupId>
+    <artifactId>eos-dap-sdk-dependencies</artifactId>
+    <version>5.0.0</version>
+  </parent>
+ 
+  <groupId>rabbitmq-demo</groupId>
+  <artifactId>rabbitmq-quickstart</artifactId>
+  <version>0.0.1</version>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>rabbitmq-quickstart-provider</module>
+    <module>rabbitmq-quickstart-consumer</module>
+  </modules>
+  
+   <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+   </properties>
+   
+    <dependencies>
+        <dependency>
+          <groupId>com.primeton.eos</groupId>
+          <artifactId>eos-dap-sdk-starter</artifactId>
+        </dependency>
+        <dependency>
+	      <groupId>org.springframework.boot</groupId>
+	      <artifactId>spring-boot-starter-amqp</artifactId>
+	    </dependency>
+	    <dependency>
+		  <groupId>com.alibaba</groupId>
+		  <artifactId>fastjson</artifactId>
+		  <version>1.1.23</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.projectlombok</groupId>
+		  <artifactId>lombok</artifactId>
+		</dependency>
+    </dependencies>
+</project>
