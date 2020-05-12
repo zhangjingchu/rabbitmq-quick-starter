@@ -91,11 +91,11 @@ spring:
   application:
     name: RABBITMQ-QUICKSTART-PROVIDER
   rabbitmq:
-    host: 172.20.8.73
-    virtual-host: /basedata
+    host: ****
+    virtual-host: /****
     port: 32002
-    username: basedata
-    password: basedata
+    username: ****
+    password: ****
     publisher-confirms: true
     
 # Eureka settings 
@@ -217,11 +217,11 @@ spring:
   application:
     name: RABBITMQ-QUICKSTART-CONSUMER
   rabbitmq:
-    host: 172.20.8.73
-    virtual-host: /basedata
+    host: ****
+    virtual-host: /****
     port: 32002
-    username: basedata
-    password: basedata
+    username: ****
+    password: ****
     listener:
       simple:
         acknowledge-mode: manual     #手动 ack
