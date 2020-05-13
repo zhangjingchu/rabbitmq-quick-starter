@@ -6,11 +6,11 @@
 
 ## 管理平台访问地址
 
-url:  http://172.20.8.73:32001
+url:  http://****:****
 
-username:  comma
+username:  ****
 
-password:  commaai2017
+password:  ****
 
 ## 用户管理
 
